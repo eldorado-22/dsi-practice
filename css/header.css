@@ -24,7 +24,7 @@ a {
 .header {
     padding: 20px 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -35,17 +35,14 @@ a {
     transition: .5s;
     margin: 0 10px;
 }
-
 .header--nav a:focus {
     color: rgba(239, 40, 40, 0.93);
     transition: .5s;
 }
-
 .header--nav select {
     border: none;
     outline: none;
 }
-
 .header--nav option {
     border: 2px solid red;
 }
