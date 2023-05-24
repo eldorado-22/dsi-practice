@@ -1,22 +1,27 @@
 
-#hero{
+#hero {
     padding: 40px 0;
 }
+
 .hero {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     padding: 40px 0;
 }
+
 .hero-text h1 {
     font-weight: 700;
     font-size: 48px;
     color: black;
 }
-span{
+
+span {
     color: #EE4248;
 }
-button{
+
+button {
     font-weight: 400;
     font-size: 20px;
     padding: 15px 30px;
@@ -27,14 +32,37 @@ button{
     outline: none;
     transition: .5s;
 }
-button:focus{
+
+button:focus {
     background: transparent;
     transition: .5s;
     border: 2px solid red;
 }
+
 p {
     font-weight: 400;
     font-size: 20px;
     color: #30444E;
     padding: 20px 0;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 769px) {
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .images {
+        padding: 40px 0;
+        width: 100%;
+    }
+
 }
