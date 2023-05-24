@@ -12,13 +12,42 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+span {
+    color: #EE4248;
+}
+
 a {
     text-decoration: none;
+    color: inherit;
+    transition: .25s;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul li{
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    list-style: none;
+}
+ul select{
+    border: none;
+    outline: none;
+}
+ul:hover a{
+    color: #575757;
+}
+ul:hover a:hover {
+    color: #EE4248;
+    box-shadow: 0 2px 0 0 currentColor;
 }
 
 #header {
     background: #FFFFFF;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0;
+
 }
 
 .header {
@@ -58,6 +87,7 @@ a {
 /*  BURGER MENU */
 .burger-menu {
     display: none;
+
 }
 
 .burger-item {
@@ -76,6 +106,11 @@ a {
         z-index: 99;
     }
 
+
+    .burger-item {
+        overflow: hidden;
+    }
+
     .header-nav {
         display: flex;
         flex-direction: column;
@@ -90,14 +125,17 @@ a {
         transform: translateX(100%);
         transition: .6s;
     }
+
     .header-nav a {
         margin: 20px 0;
         color: #FFFFFF;
         text-align: start;
     }
+
     .header-icons {
         margin: 10px 0 0 48%;
     }
+
     select {
         display: none;
     }
