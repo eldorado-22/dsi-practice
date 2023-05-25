@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .block{
     padding: 30px 0;
@@ -44,4 +45,13 @@
     transition: .5s;
     border: 2px solid red;
     color: black;
+}
+
+@media (max-width: 1141px) {
+    .group {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 }
